@@ -1,0 +1,56 @@
+[
+  {
+    "credit_amount": 250000,
+    "expiry_date": "2025-08-06T12:00:00+00:00",
+    "decision_date": "2024-08-06T12:00:00+00:00",
+    "status": "approved",
+    "application_type": "new",
+    "company": {
+      "name": "Some Company LTD",
+      "registration_number": "ABCD1234"
+      "industry": "manufacturing"
+    },
+    "credit_information": {
+      "credit_score": 83,
+      "total_assets": 3000000,
+      "gross_profit": 1000000,
+      "annual_turnover": 2000000
+    }
+  },
+  {
+    "credit_amount": 100000,
+    "expiry_date": null,
+    "decision_date": null,
+    "status": "pending",
+    "application_type": "renewal",
+    "company": {
+      "name": "We Sell Bikes LTD",
+      "registration_number": "EFGH5678"
+      "industry": "sales"
+    },
+    "credit_information": {
+      "credit_score": 76,
+      "total_assets": 250000,
+      "gross_profit": 500000,
+      "annual_turnover": 700000
+    }
+  },
+  {
+    "credit_amount": 3000000,
+    "expiry_date": null,
+    "decision_date": null,
+    "status": "pending",
+    "application_type": "new",
+    "company": {
+      "name": "Loads'a'Packages LTD",
+      "registration_number": "IJKL5678"
+      "industry": "distribution"
+    },
+    "credit_information": {
+      "credit_score": 98,
+      "total_assets": 3000000,
+      "gross_profit": 2000000,
+      "annual_turnover": 5000000
+    }
+  }
+]
