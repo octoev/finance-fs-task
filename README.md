@@ -49,7 +49,7 @@ The `next.config.mjs` provides rewrites to map any request to `/api/:path` to th
 
 * The back end implementation should be provided in the `/api` directory.
 * Implement a RESTful API service that provides endpoints to serve the use cases outlined in the front end requirements.
-* Use a lightweight framework; we suggest [FastAPI](https://fastapi.tiangolo.com/).
+* For this task please use [FastAPI](https://fastapi.tiangolo.com/).
 * A database is not required for this task, you may either store the changes in memory or modify the provided `credit_lines.json` file on form input.
 * Provide some basic tests for the key paths.
 
