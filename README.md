@@ -1,14 +1,14 @@
 # Fullstack Technical Task
 
-Welcome to Octopus Electric Vehicles' technical task for the Fullstack Developer role. For this task you will create a small backend service that provides data to, and receives data from a front end portal.
+Welcome to Octopus Electric Vehicles' technical task for the Fullstack Developer role. For this task you will create a small backend service that provides data to, and receives data from, a front end portal.
 
 ## Background
 
-One of our primary leasing products offers services to businesses that allows them to offer electric vehicles as an employee benefit. As part of this process lines of credit must be submitted, managed, and approved by members of our financial team.
+One of our primary leasing products allows out customers' employees access to an electric vehicle as an employee benefit. As part of this process lines of credit must be submitted, managed, and approved by members of our financial team.
 
 As part of this technical task you will be implementing a backend service to manage these lines of credits and a front end application to act as an interface for internal users.
 
-The `credit_lines.json` file provides a sample dataset with a few credit lines.
+The `credit_lines.json` file provides a sample dataset with a few credit lines. A "credit line" represents an amount of funds we manage that employees are able to use to purchase vehicles.
 
 ## Getting started
 
@@ -30,7 +30,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-The FastAPI server will be running on http://127.0.0.1:8000 – feel free to change the port in package.json (you'll also need to update it in next.config.js).
+The FastAPI server will be running on http://127.0.0.1:8000 – feel free to change the port in `package.json` (you'll also need to update it in `next.config.mjs`).
+
+The `next.config.mjs` provides rewrites to map any request to `/api/:path` to the FastAPI app, which is hosted in the `/api` folder.
 
 ## Requirements
 
@@ -45,6 +47,7 @@ The FastAPI server will be running on http://127.0.0.1:8000 – feel free to cha
 
 ### Backend
 
+* The back end implementation should be provided in the `/api` directory.
 * Implement a RESTful API service that provides endpoints to serve the use cases outlined in the front end requirements.
 * Use a lightweight framework; we suggest [FastAPI](https://fastapi.tiangolo.com/).
 * A database is not required for this task, you may either store the changes in memory or modify the provided `credit_lines.json` file on form input.
